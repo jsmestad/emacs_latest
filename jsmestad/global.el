@@ -5,6 +5,8 @@
 (prefer-coding-system 'utf-8)
 
 ;; Move Meta to option key in OSX
+(vendor 'redo+)
+(vendor 'mac-key-mode)
 (mac-key-mode 1)
 (setq mac-option-modifier 'meta)
 

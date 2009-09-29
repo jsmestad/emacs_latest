@@ -5,6 +5,19 @@
 (require 'thingatpt)
 (require 'imenu)
 
+;; For loading libraries in from the vendor directory
+(defun vendor (library)
+  (let* ((file (symbol-name library)) 
+         (normal (concat "~/.emacs.d/vendor/" file)) 
+         (suffix (concat normal ".el"))
+         (jsmestad (concat "~/.emacs.d/jsmestad/" file)))
+    (cond 
+     ((file-directory-p normal) (add-to-list 'load-path normal) (require library))
+     ((file-directory-p suffix) (add-to-list 'load-path suffix) (require library))
+     ((file-exists-p suffix) (require library)))
+    (when (file-exists-p (concat jsmestad ".el"))
+      (load jsmestad))))
+
 ;; Network
 
 (defun view-url ()
@@ -220,5 +233,4 @@ Symbols matching the text at point are put first in the completion list."
   (let ((name (file-relative-name file)))
     (vc-git-command buf 0 name "blame" "-w" rev)))
 
-(provide 'starter-kit-defuns)
-;;; starter-kit-defuns.el ends here
+

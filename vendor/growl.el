@@ -26,8 +26,9 @@
 
 ;;; Code:
 
-(unless (executable-find "growlnotify")
-  (error "growl.el requires that you install the `growlnotify' program.")n)
+;; This is annoying... screw em.
+;;(unless (executable-find "growlnotify")
+;;  (error "growl.el requires that you install the `growlnotify' program.")n)
 
 (defun growl (message &optional subject sticky)
   "Notify the user of something via Growl."

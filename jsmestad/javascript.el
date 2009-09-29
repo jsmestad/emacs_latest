@@ -1,3 +1,6 @@
+(vendor 'moz)
+(vendor 'espresso)
+
 ;; taken from http://github.com/technomancy/starter-kit-js.el
 (autoload 'espresso-mode "espresso" "Start espresso-mode" t)
 

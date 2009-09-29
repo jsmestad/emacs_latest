@@ -14,16 +14,16 @@
 (load "jsmestad/theme")
 (load "jsmestad/temp_files")
 (load "jsmestad/ecb")
+(load "jsmestad/viper")
 ;;(load "defunkt/github")
 ;;(load "defunkt/git")
-
 
 (load custom-file)
  
 (when (file-exists-p "jsmestad/private") 
   (load "jsmestad/private"))
 
-
+;; TODO: YaSnippet
 
 (vendor 'ack)
 (vendor 'cheat)

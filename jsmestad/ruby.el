@@ -105,7 +105,8 @@ exec-to-string command, but it works and seems fast"
                    (flymake-mode t))))))
 
 ;; Ruby Defaults -- ruby-electric, pabbrev, ruby-block, whitespace
-;; Ruby Defaults -- ruby-electric, pabbrev, ruby-block, whitespace
+(vendor 'ruby-electric)
+(vendor 'ruby-block)
 (add-hook 'ruby-mode-hook
           (lambda()
             (add-hook 'local-write-file-hooks

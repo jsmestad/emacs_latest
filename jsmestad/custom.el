@@ -15,7 +15,8 @@
  '(ecb-tip-of-the-day nil)
  '(ecb-tree-buffer-style (quote ascii-guides))
  '(ecb-windows-height 0.18)
- '(ecb-windows-width 0.12))
+ '(ecb-windows-width 0.12)
+ '(viper-vi-style-in-minibuffer nil))
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.

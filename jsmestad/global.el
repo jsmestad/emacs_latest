@@ -3,6 +3,9 @@
 (set-terminal-coding-system 'utf-8)
 (set-keyboard-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
+(setq-default tab-width 2)
+(setq-default indent-tabs-mode nil) ; eliminate hard tabs
+(setq-default truncate-lines t) ; no word wrapping!
 
 ;; Move Meta to option key in OSX
 (vendor 'redo+)
@@ -16,10 +19,12 @@
 
 ;; Mouse - make it function like OSX apps
 (mouse-wheel-mode t)
+(setq mac-emulate-three-button-mouse nil)
 (setq transient-mark-mode t)  ;  makes the region act quite like the text "highlight" in many apps.
 (setq mouse-drag-copy-region nil)  ; stops selection with a mouse being immediately injected to the kill ring
 (setq x-select-enable-primary nil)  ; stops killing/yanking interacting with primary X11 selection 
 (setq x-select-enable-clipboard t)  ; makes killing/yanking interact with clipboard X11 selection
+(setq-default scroll-conservatively 1)	; Do not scroll dramatically when moving one line at a time!
 
 ;; Delete key fix
 (global-set-key [kp-delete] 'delete-char)
@@ -32,6 +37,9 @@
 (global-set-key [f7] 'split-window-vertically)
 (global-set-key [f8] 'delete-window)
 
+;; Delete key fix
+(global-set-key [kp-delete] 'delete-char)
+
 ;; GIT
 ;; Automatically Revert Buffer (for branch changes)
 (global-auto-revert-mode 1)
@@ -42,3 +50,10 @@
 ;; make emacs use the clipboard
 (setq x-select-enable-clipboard t)
 (setq interprogram-paste-function 'x-cut-buffer-or-selection-value)
+
+;; TODO: Don't clutter up directories with files~
+;;(setq backup-directory-alist `(("." . ,(expand-file-name
+;;                                        (concat dotfiles-dir "backups")))))
+
+;; Default to unified diffs
+(setq diff-switches "-u")

@@ -1,3 +1,7 @@
+(setq desktop-save t)
+
+(set-face-background 'region "#444444")
+
 ;; Platform -- OSX
 ;; utf-8 encoding should be used
 (set-terminal-coding-system 'utf-8)
@@ -51,9 +55,19 @@
 (setq x-select-enable-clipboard t)
 (setq interprogram-paste-function 'x-cut-buffer-or-selection-value)
 
-;; TODO: Don't clutter up directories with files~
-;;(setq backup-directory-alist `(("." . ,(expand-file-name
-;;                                        (concat dotfiles-dir "backups")))))
+;; Put autosave files (ie #foo#) in one place, *not*
+;; scattered all over the file system!
+(defvar autosave-dir
+ (concat "/tmp/emacs_autosaves/" (user-login-name) "/"))
+ (make-directory autosave-dir t)
+ (setq auto-save-file-name-transforms `(("\\(?:[^/]*/\\)*\\(.*\\)" ,(concat
+       autosave-dir "\\1") t)))
+
+;; Put backup files (ie foo~) in one place too. (The backup-directory-alist
+;; list contains regexp=>directory mappings; filenames matching a regexp are
+;; backed up in the corresponding directory. Emacs will mkdir it if necessary.)
+(defvar backup-dir (concat "/tmp/emacs_backups/" (user-login-name) "/"))
+  (setq backup-directory-alist (list (cons "." backup-dir)))
 
 ;; Default to unified diffs
 (setq diff-switches "-u")

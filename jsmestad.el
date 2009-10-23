@@ -1,3 +1,5 @@
+(require 'cl)
+
 (add-to-list 'load-path "~/.emacs.d/vendor")
 (add-to-list 'load-path "~/.emacs.d/vendor/ecb-2.40")
 
@@ -14,7 +16,7 @@
 (load "jsmestad/theme")
 (load "jsmestad/temp_files")
 (load "jsmestad/ecb")
-(load "jsmestad/viper")
+;;(load "jsmestad/viper")
 ;;(load "defunkt/github")
 ;;(load "defunkt/git")
 
@@ -35,7 +37,8 @@
 (textmate-mode)
 (vendor 'yaml-mode)
 (vendor 'pabbrev)
-(vendor 'mysql)
+;; (vendor 'mysql)
+;; (vendor 'highline)
 
 ;; Ruby specific
 (vendor 'haml-mode)

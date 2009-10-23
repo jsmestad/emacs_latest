@@ -1,6 +1,7 @@
 ;; Viper Hook
 ;; Make mode-line colored
 (setq viper-mode t)
+(setq viper-always t)
 (require 'viper)
 (eval-after-load 'viper
    '(progn

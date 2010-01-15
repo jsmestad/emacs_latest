@@ -22,3 +22,9 @@
 [submodule "vendor/textmate.el"]
 	path = vendor/textmate.el
 	url = git://github.com/defunkt/textmate.el.git
+[submodule "vendor/ruby-complexity"]
+	path = vendor/ruby-complexity
+	url = git://github.com/jsmestad/ruby-complexity.git
+[submodule "vendor/yaml-mode.el"]
+  path = vendor/yaml-mode.el
+  url = git://github.com/yoshiki/yaml-mode.git

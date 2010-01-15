@@ -4651,7 +4651,7 @@ by semantic and also killed afterwards."
   (if ecb-minor-mode
       (let ( ;; XEmacs 21.4 does not set this so we do it here, to ensure that
             ;; the custom-file is loadede in an emacs-lisp-mode buffer, s.b.
-            (default-major-mode 'emacs-lisp-mode)
+            (major-mode 'emacs-lisp-mode)
             (ecb-basic-buffer-sync nil)
             (kill-buffer-hook nil)
             ;; we prevent parsing the custom-file

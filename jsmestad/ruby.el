@@ -1,3 +1,5 @@
+(load-file "~/.emacs.d/vendor/nxhtml/autostart.el")
+
 ;; Rinari (Minor Mode for Ruby On Rails)
 ;; Initial Rinari import
 (vendor 'rinari)
@@ -104,6 +106,11 @@ exec-to-string command, but it works and seems fast"
                                   'flymake-display-err-menu-for-current-line)
                    (flymake-mode t))))))
 
+(add-hook 'ruby-mode-hook
+    (function (lambda ()
+      (flymake-mode)
+      (linum-mode)
+      (ruby-complexity-mode))))
 ;; Ruby Defaults -- ruby-electric, pabbrev, ruby-block, whitespace
 (vendor 'ruby-electric)
 (vendor 'ruby-block)
@@ -127,3 +134,11 @@ exec-to-string command, but it works and seems fast"
             ;; (setnu-mode t)
             (define-key ruby-mode-map "\C-c\C-a" 'ruby-eval-buffer)
             ))
+
+(setq nxhtml-global-minor-mode t
+      mumamo-chunk-coloring 'submode-colored
+      nxhtml-skip-welcome t
+      indent-region-mode t
+      rng-nxml-auto-validate-flag nil
+      nxml-degraded t)
+      (add-to-list 'auto-mode-alist '("\\.html\\.erb\\'" . eruby-nxhtml-mumamo))

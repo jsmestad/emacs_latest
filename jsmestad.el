@@ -43,3 +43,5 @@
 ;; Ruby specific
 (vendor 'haml-mode)
 (vendor 'sass-mode)
+(vendor 'nxhtml)
+(vendor 'ruby-complexity)

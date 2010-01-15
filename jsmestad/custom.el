@@ -11,7 +11,7 @@
  '(ecb-layout-name "right1")
  '(ecb-options-version "2.40")
  '(ecb-primary-secondary-mouse-buttons (quote mouse-1--C-mouse-1))
- '(ecb-source-path (quote (("~/Documents/Development" "dev") ("~/Documents/Factory" "factory") (#("/Users/justinsmestad/Documents/Development/github_projects/pending_downloads" 0 76 (help-echo "Mouse-2 toggles maximizing, mouse-3 displays a popup-menu")) "pending_dl"))))
+ '(ecb-source-path (quote (("~/Documents/Development" "dev") ("~/Documents/Factory" "factory") ("/Users/justinsmestad/Documents/Development/github_projects/overstuffed_gorilla" "og") ("/Users/justinsmestad/Documents/Development/github_projects/taken_with" "taken_with") ("/Users/justinsmestad/Documents/Factory/ims" "IMS") ("/Users/justinsmestad/Documents/Factory/audi_spiff" "spiff"))))
  '(ecb-tip-of-the-day nil)
  '(ecb-tree-buffer-style (quote ascii-guides))
  '(ecb-windows-height 0.18)

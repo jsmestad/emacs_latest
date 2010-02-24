@@ -11,7 +11,7 @@
  '(ecb-layout-name "right1")
  '(ecb-options-version "2.40")
  '(ecb-primary-secondary-mouse-buttons (quote mouse-1--C-mouse-1))
- '(ecb-source-path (quote (("~/Documents/Development" "dev") ("~/Documents/Factory" "factory") ("/Users/justinsmestad/Documents/Development/github_projects/overstuffed_gorilla" "og") ("/Users/justinsmestad/Documents/Development/github_projects/taken_with" "taken_with") ("/Users/justinsmestad/Documents/Factory/ims" "IMS") ("/Users/justinsmestad/Documents/Factory/audi_spiff" "spiff"))))
+ '(ecb-source-path (quote (("~/Documents/Development" "dev") ("~/Documents/Factory" "factory") ("/Users/justinsmestad/Documents/Development/github_projects/overstuffed_gorilla" "og") ("/Users/justinsmestad/Documents/Development/github_projects/taken_with" "taken_with") ("/Users/justinsmestad/Documents/Factory/ims" "IMS") ("/Users/justinsmestad/Documents/Factory/audi_spiff" "spiff") (#("/Users/justinsmestad/Documents/Development/github_projects/stale_fish" 0 69 (help-echo "Mouse-2 toggles maximizing, mouse-3 displays a popup-menu")) "stale_fish") (#("/Users/justinsmestad/Documents/Development/github_projects/pivotal-tracker" 0 74 (help-echo "Mouse-2 toggles maximizing, mouse-3 displays a popup-menu")) "pivotal"))))
  '(ecb-tip-of-the-day nil)
  '(ecb-tree-buffer-style (quote ascii-guides))
  '(ecb-windows-height 0.18)

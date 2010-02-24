@@ -15,7 +15,7 @@
 (load "jsmestad/modes")
 (load "jsmestad/theme")
 (load "jsmestad/temp_files")
-(load "jsmestad/ecb")
+;;(load "jsmestad/ecb")
 ;;(load "jsmestad/viper")
 ;;(load "defunkt/github")
 ;;(load "defunkt/git")
@@ -34,7 +34,6 @@
 (vendor 'growl)
 (vendor 'textile-mode)
 (vendor 'textmate)
-(textmate-mode)
 (vendor 'yaml-mode)
 (vendor 'pabbrev)
 ;; (vendor 'mysql)
@@ -43,5 +42,9 @@
 ;; Ruby specific
 (vendor 'haml-mode)
 (vendor 'sass-mode)
-(vendor 'nxhtml)
-(vendor 'ruby-complexity)
+(vendor 'sinatra-mode)
+(vendor 'sr-speedbar)
+;;(vendor 'ruby-complexity)
+
+;; Textmate mode
+(textmate-mode)

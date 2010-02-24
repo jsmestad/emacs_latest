@@ -28,3 +28,6 @@
 [submodule "vendor/yaml-mode.el"]
   path = vendor/yaml-mode.el
   url = git://github.com/yoshiki/yaml-mode.git
+[submodule "vendor/sinatra.el"]
+	path = vendor/sinatra.el
+	url = git://github.com/eschulte/sinatra_el.git

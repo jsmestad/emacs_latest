@@ -22,6 +22,7 @@
 (add-to-list 'auto-mode-alist '("Rakefile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.gemspec$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.rb$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Gemfile$" . ruby-mode))
 
 ;; We never want to edit Rubinius bytecode
 (add-to-list 'completion-ignored-extensions ".rbc")
@@ -106,11 +107,6 @@ exec-to-string command, but it works and seems fast"
                                   'flymake-display-err-menu-for-current-line)
                    (flymake-mode t))))))
 
-(add-hook 'ruby-mode-hook
-    (function (lambda ()
-      (flymake-mode)
-      (linum-mode)
-      (ruby-complexity-mode))))
 ;; Ruby Defaults -- ruby-electric, pabbrev, ruby-block, whitespace
 (vendor 'ruby-electric)
 (vendor 'ruby-block)

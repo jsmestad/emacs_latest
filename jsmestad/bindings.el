@@ -65,3 +65,6 @@
 
 ;; Should be able to eval-and-replace anywhere.
 (global-set-key (kbd "C-c e") 'eval-and-replace)
+
+;; Toggle Speedbar
+(global-set-key (kbd "s-s") 'sr-speedbar-toggle)

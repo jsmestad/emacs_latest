@@ -13,10 +13,10 @@
 (setq espresso-auto-indent-flag nil)
 
 (eval-after-load 'espresso
-  '(progn (define-key espresso-mode-map "{" 'paredit-open-curly)
-          (define-key espresso-mode-map "}" 'paredit-close-curly-and-newline)
+  '(progn 
+          
           ;; fixes problem with pretty function font-lock
-          (define-key espresso-mode-map (kbd ",") 'self-insert-command)
+          
           (font-lock-add-keywords 'espresso-mode
                         '(("\\<\\(FIX\\|TODO\\|FIXME\\|HACK\\|REFACTOR\\):"
                            1 font-lock-warning-face t)))
